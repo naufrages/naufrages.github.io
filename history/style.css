@@ -1,0 +1,88 @@
+:root {
+    --darkgreen: #042b00;
+    --lightgreen:#d8fea3;
+    --darkpurple:#2d0150;
+    --lila: #cecad9;
+}
+
+@font-face {
+    font-family: "Sora";
+    src: url("fonts/Sora-ExtraBold.ttf") format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Sora";
+    src: url("fonts/Sora-Thin.ttf") format("truetype");
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: "Sora";
+    src: url("fonts/Sora-Regular.ttf") format("truetype");
+    font-weight: normal;
+}
+
+
+body {
+    margin: 0;
+    background-color: var(--lila);
+}
+
+header {
+    position: relative;
+    margin-bottom: 2em;
+}
+
+section {
+    padding: 2em 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding: 0 1.5em;
+}
+
+.titles {
+    position: absolute;
+    bottom: 2em;
+    left: 2em;
+}
+
+h1{
+    font-family: Sora;
+    font-weight: 900;
+    font-size: 2.8em;
+    color: var(--lightgreen);
+    margin: 0;
+}
+
+h2{
+    font-family: Sora;
+    font-weight: 200;
+    font-size: 1.35em;
+    color: var(--lightgreen);
+    margin: 0;
+}
+
+
+.header-img {
+    width: 100%;
+    mask-image: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 90%);
+    -webkit-mask-image: -webkit-gradient(linear, left 50%, left 90%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+}
+
+.date {
+    font-family: "Sora";
+    font-size: 2em;
+    font-weight: 900;
+    color: var(--lightgreen);
+}
+
+p {
+    font-family: "Sora";
+    font-weight: normal;
+    font-size: 1.2em;
+    color: var(--darkpurple);
+}
