@@ -1,0 +1,121 @@
+/* SECTION general */
+*{
+    scroll-behavior: smooth;
+    font-family: 'Sora';
+    font-weight: 400;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+h1, h2, h3{
+    margin: 0;
+}
+section{
+    height: 100vh;
+    padding: 5%;
+    color: white;
+}
+/*/!SECTION */
+/* SECTION landing */
+nav{
+    display: flex;
+    justify-content: end;
+    gap: 10%;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+
+#landing{
+    background-image: url("./src/bg.png");
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "logo nav"
+    "date title"
+    "names names";
+}
+.logo{
+    height: 6em;
+}
+.names{
+    grid-area: names;
+    align-self: end;
+    display: flex;
+    justify-content: space-between;
+}
+.date{
+    align-self: center;
+    height: 6em;
+}
+.titles{
+    place-self: center end;
+    font-size: 200%;
+}
+.titles h1, .names h2{
+    font-weight: 800;
+}
+.names > div{
+    text-align: center;
+}
+.downArrow{
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0);
+    }
+    15%{
+        transform: translateY(15px);
+    }
+    30%{
+        transform: translateY(0);
+    }
+}
+/*/!SECTION */
+/* SECTION projet */
+.article{
+    height: fit-content;
+    margin: 5% 10% 0 10%;
+    color: black;
+    display: grid;
+    column-gap: 30px;
+    grid-template-columns: 50px 2px 1fr 1fr;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-areas: 
+    "number separator . ."
+    ". separator sec1 sec2"
+    ". . sec1 sec2";
+    background-image: url("./src/greenPattern.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50px 30px ;
+}
+.article h1{
+    font-size: 3em;
+    font-weight: 500;
+}
+.article h2{
+    font-size: 2em;
+    font-weight: 600;
+}
+.article .separator{
+    grid-area: separator;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+.article .sec1{
+    grid-area: sec1;
+}
+.article .sec2{
+    grid-area: sec2;
+}
+/*/!SECTION */
