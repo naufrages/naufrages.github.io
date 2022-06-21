@@ -13,7 +13,7 @@ h1, h2, h3{
 }
 section{
     height: 100vh;
-    padding: 5%;
+    padding: 3%;
     color: white;
 }
 /*/!SECTION */
@@ -36,7 +36,7 @@ nav a:hover{
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 6em 1fr 6em;
     grid-template-areas: 
     "logo nav"
     "date title"
