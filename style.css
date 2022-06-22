@@ -140,6 +140,9 @@ nav a:hover{
     width: 33%;
     background-color: white;
 }
+#bonlieu article{
+    width: 66vw;
+}
 /*/!SECTION */
 /* SECTION Autres */
 #links{    
@@ -154,15 +157,45 @@ nav a:hover{
     justify-items: center;
     align-items: center;
     column-gap: 5%;
+    margin-top: 5%;
 }
 .contributors img{
     border-radius: 50%;
-    height: 70%;
+    height: 18em;
+    transition: 0.5s ease-out;
+    box-shadow: 0 0 0 #064f15;
+}
+.contributors img:hover{
+    transform: translate(-0.5em, -0.5em);
+    box-shadow: 0.5em 0.5em 0 #2D064F;
 }
 /*/!SECTION */
 /* SECTION footer */
 footer{
     height: 300px;
+    color: hsl(0, 0%, 80%);
     background-color: #333333;
+    display: grid;
+    grid-template-columns: 20px repeat(3, 1fr);
+    grid-template-rows: 1fr 4em;
+    padding: 3% 10% 0 10%;
+    gap: 5%;
+    align-items: center;
+    justify-items: center;
+}
+footer img{
+    max-height: 100px;
+}
+footer p{
+    grid-column: 3;
+}
+.networks{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    filter: invert();
+}
+.networks img{
+    width: 100%;
 }
 /*/!SECTION */
