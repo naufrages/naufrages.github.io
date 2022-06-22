@@ -11,10 +11,17 @@ body{
 h1, h2, h3{
     margin: 0;
 }
+h1{
+    font-size: 3em;
+    font-weight: 500;
+}
+h2{
+    font-size: 2em;
+    font-weight: 600;
+}
 section{
     height: 100vh;
-    padding: 3%;
-    color: white;
+    padding: 8% 13% 8% 13%;
 }
 /*/!SECTION */
 /* SECTION landing */
@@ -32,7 +39,9 @@ nav a:hover{
 }
 
 #landing{
+    padding: 3%;
     background-image: url("./src/bg.png");
+    color: white;
     background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,6 +71,12 @@ nav a:hover{
 .titles h1, .names h2{
     font-weight: 800;
 }
+.titles h1{
+    font-size: 2em;
+}
+#landing h2{
+    font-size: 1.5em;
+}
 .names > div{
     text-align: center;
 }
@@ -83,11 +98,10 @@ nav a:hover{
 /* SECTION projet */
 .article{
     height: fit-content;
-    margin: 5% 10% 0 10%;
     color: black;
     display: grid;
     column-gap: 30px;
-    grid-template-columns: 50px 2px 1fr 1fr;
+    grid-template-columns: 50px 2.5px 1fr 1fr;
     grid-template-rows: 60px 1fr 60px;
     grid-template-areas: 
     "number separator . ."
@@ -97,14 +111,6 @@ nav a:hover{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50px 30px ;
-}
-.article h1{
-    font-size: 3em;
-    font-weight: 500;
-}
-.article h2{
-    font-size: 2em;
-    font-weight: 600;
 }
 .article .separator{
     grid-area: separator;
@@ -117,5 +123,46 @@ nav a:hover{
 }
 .article .sec2{
     grid-area: sec2;
+}
+/*/!SECTION */
+/* SECTION Bonlieu */
+#bonlieu{
+    height: 100vh;
+    background: linear-gradient(264.07deg, #D9F5A3 0%, #310B52 97.4%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+}
+#bonlieu .separator{
+    height: 2.5px;
+    width: 33%;
+    background-color: white;
+}
+/*/!SECTION */
+/* SECTION Autres */
+#links{    
+    background-image: url("./src/purplePattern.png");
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: -2em 7em ;
+}
+.contributors{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    column-gap: 5%;
+}
+.contributors img{
+    border-radius: 50%;
+    height: 70%;
+}
+/*/!SECTION */
+/* SECTION footer */
+footer{
+    height: 300px;
+    background-color: #333333;
 }
 /*/!SECTION */
