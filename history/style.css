@@ -13,12 +13,6 @@
 
 @font-face {
     font-family: "Sora";
-    src: url("fonts/Sora-Thin.ttf") format("truetype");
-    font-weight: 200;
-}
-
-@font-face {
-    font-family: "Sora";
     src: url("fonts/Sora-Regular.ttf") format("truetype");
     font-weight: normal;
 }
@@ -26,12 +20,11 @@
 
 body {
     margin: 0;
-    background-color: var(--lila);
+    background-color: var(--darkpurple);
 }
 
 header {
     position: relative;
-    margin-bottom: 2em;
 }
 
 section {
@@ -40,28 +33,44 @@ section {
 
 .container {
     max-width: 500px;
-    margin: auto;
+    margin: -80px auto 0 auto;
     padding: 0 1.5em;
+    position: relative;
+}
+.container:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 80px;
+    height: 100%;
+    background-image: url("images/backgound-image.png");
+    background-repeat: repeat-y;
+    background-position: -20px 0;
+    background-size: 400px;
+    opacity: .6;
 }
 
 .titles {
     position: absolute;
-    bottom: 2em;
+    bottom: 120px;
     left: 2em;
 }
 
 h1{
     font-family: Sora;
     font-weight: 900;
-    font-size: 2.8em;
+    font-size: 39px;
+    text-transform: uppercase;
     color: var(--lightgreen);
     margin: 0;
 }
 
 h2{
     font-family: Sora;
-    font-weight: 200;
-    font-size: 1.35em;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-weight: normal;
     color: var(--lightgreen);
     margin: 0;
 }
@@ -69,8 +78,10 @@ h2{
 
 .header-img {
     width: 100%;
-    mask-image: linear-gradient(90deg, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 90%);
-    -webkit-mask-image: -webkit-gradient(linear, left 50%, left 90%, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)));
+    mask-image: linear-gradient(90deg, rgba(0,0,0,.9) 50%, rgba(0,0,0,0) 90%);
+    -webkit-mask-image: -webkit-gradient(linear, left 50%, left 100%, from(rgba(0,0,0,.9)), to(rgba(0,0,0,0)));
+    object-fit: cover;
+    height: 600px;
 }
 
 .date {
@@ -83,6 +94,7 @@ h2{
 p {
     font-family: "Sora";
     font-weight: normal;
-    font-size: 1.2em;
-    color: var(--darkpurple);
+    font-size: 17px;
+    padding-right: 80px;
+    color: var(--lila);
 }
