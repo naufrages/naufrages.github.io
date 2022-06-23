@@ -35,6 +35,14 @@ section {
 
 
 /* SECTION landing */
+#myVideo {
+    position: absolute;
+    z-index: -2;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
 nav {
     display: flex;
     justify-content: end;
@@ -52,9 +60,7 @@ nav a:hover {
 
 #landing {
     padding: 3%;
-    background-image: url("./src/bg.png");
     color: white;
-    background-size: cover;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 6em 1fr 6em;
