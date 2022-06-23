@@ -53,6 +53,31 @@ section {
     width: 100vw;
     max-width:100%;
 }
+.arrowToTop{
+    background-color: black;
+    height: 2vw;
+    width: 2vw;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10%;
+    bottom: 1vw;
+    right: 1vw;
+    transform: translateY(200%);
+    transition: 0.5s;
+    z-index: 1;
+}
+#landing:not(:hover) .arrowToTop{
+    transform: translateY(0);
+}
+.arrowToTop:hover{
+    transform: translateY(0);
+}
+.arrowToTop img{
+    height: 70%;
+    transform: rotate(180deg);
+}
 nav {
     display: flex;
     justify-content: end;
