@@ -176,6 +176,12 @@ nav a:hover {
         "names names";
         gap: 2em;
     }
+    .logo, .date{
+        height: 5em;
+    }
+    .date{
+        justify-self: end;
+    }
     nav{
         display: none;
     }
@@ -253,6 +259,10 @@ nav a:hover {
         "sec1"
         "sec2";
         row-gap: 1em;
+        background-size: 8em;
+    }
+    .article:nth-of-type(3) {
+        background-position: 80vw 0;
     }
     .article p {
         width: 100%;
@@ -525,7 +535,7 @@ footer iframe {
     footer iframe, .mapButton{
         grid-column: 1;
         grid-row: 6;
-        height: 16/9vw;
+        height: 75vw;
     }
     .copyright{
         grid-column: 1;
