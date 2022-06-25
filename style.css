@@ -532,10 +532,13 @@ footer iframe {
         height: auto;
         gap: 2em;
     }
-    footer iframe, .mapButton{
+    footer iframe{
         grid-column: 1;
         grid-row: 6;
         height: 75vw;
+    }
+    .mapButton{
+        display: none;
     }
     .copyright{
         grid-column: 1;
