@@ -38,8 +38,7 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
+    height: 100vh;
     z-index: -1;
 }
 video {
@@ -131,6 +130,7 @@ nav a:hover {
     place-self: center end;
     font-size: 200%;
     grid-area: title;
+    color: red;
 }
 
 .titles h1,
