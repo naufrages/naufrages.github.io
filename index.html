@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
     <title>Les Naufragés</title>
     <style>
         @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap");
@@ -15,9 +15,11 @@
 
 <body>
     <section id="landing">
-        <video autoplay muted loop id="myVideo">
-            <source src="./src/teaser.mp4" type="video/mp4">
-        </video>
+        <div class="videoContainer">
+            <video autoplay muted loop id="myVideo">
+                <source src="./src/teaser.mp4" type="video/mp4">
+            </video>
+        </div>
         <img src="./src/bg.png" alt="Teaser" class="safetyBackground">
         <a href="#" class="arrowToTop">
             <img src="./src/ptiteFleche.png" alt="Flèche vers le hautT">
@@ -125,24 +127,25 @@
             <article>
                 <h2>Ils nous font confiance</h2>
                 <p>
-                    L’équipage des Naufragés tient à remercier la totalité du corps
-                    enseignant Gobelins pour son accompagnement. Mais également la Scène
-                    nationale Bonlieu pour nous avoir accordé leur confiance. Grâce à ce
+                    L’équipage des <b>Naufragés</b> tient à remercier la totalité du corps
+                    enseignant <b>Gobelins</b> pour son accompagnement. Mais également 
+                    l'agence <b>Async</b> pour nous avoir accordé leur confiance. Grâce à ce
                     projet nous avons pu voir grand et nous dépasser.
                 </p>
             </article>
             <article>
                 <h2>Bonlieu</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat.
+                    Avec plus de <b>75 000 spectateurs</b> par saison, Bonlieu Scène Nationale est 
+                    une des scènes les plus actives de France. Jusqu’à <b>200 dates de spectacles</b> 
+                    sont proposées par saison, pour <b>90 spectacles différents</b>. 
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, adipiscing elit, sed do eiusmod tempor inre
-                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                    Elle organise notamment le festival <b>Annecy paysages</b> qui est un itinéraire en ville et en plein air, 
+                    ponctué par des installations artistiques et paysagères dans les sites emblématiques des paysages 
+                    patrimoniaux et naturels de la ville d’Annecy.
+                    Pour sa <b>5e édition</b>, Bonlieu a décidé de travailler en collaboration avec nous afin de proposer une 
+                    <b>nouvelle forme d'art</b> au festival.
                 </p>
             </article>
         </div>
@@ -166,94 +169,95 @@
                 en péril.
                 Vous devez réparer la fontaine symbolisant son cœur et ainsi faire revenir l’eau et la vie.
                 Pour cela, résolvez les énigmes et percez ses secrets...</p>
-            <div class="yggdrasil">
-                <input type=radio class="readMoreButton" id="readMoreButtonYggdrasil" name="yggdrasil" />
-                <input type=radio class="readLessButton" id="readlessButtonYggdrasil" name="yggdrasil" />
-                <span class="toggleText yggdrasil">
-                    <div>
-                        <p>Le majestueux marronnier du jardin de l’évêché a été coupé sans qu’il n’ai pu assurer sa
-                            succession.
-                            C’est là, au pied de ce qu’il reste de cet arbre centenaire qu’attend un délicat fruit de
-                            cristal.
-                            Seule une personne avec suffisamment d’attention pourra ramasser ce fragment d’âme.
-                            Seul celui qui le poussera à se développer pourra se voir remettre sa succession, son
-                            dernier
-                            fruit.
-                            Cela peut être vous, cela peut être moi, seulement l’heure tourne, et la souche de notre ami
-                            n’est là
-                            que jusqu’à la fin de l’été…</p>
-                        <div class="blurrer"></div>
+                <div class="yggdrasil">
+                    <input type=radio class="readMoreButton" id="readMoreButtonYggdrasil" name="yggdrasil" />
+                    <input type=radio class="readLessButton" id="readlessButtonYggdrasil" name="yggdrasil" />
+                    <span class="toggleText yggdrasil">
+                        <div>
+                            <p>Le majestueux marronnier du jardin de l’évêché a été coupé sans qu’il n’ai pu assurer sa
+                                succession.
+                                C’est là, au pied de ce qu’il reste de cet arbre centenaire qu’attend un délicat fruit de
+                                cristal.
+                                Seule une personne avec suffisamment d’attention pourra ramasser ce fragment d’âme.
+                                Seul celui qui le poussera à se développer pourra se voir remettre sa succession, son
+                                dernier
+                                fruit.
+                                Cela peut être vous, cela peut être moi, seulement l’heure tourne, et la souche de notre ami
+                                n’est là
+                                que jusqu’à la fin de l’été…</p>
+                                <div class="blurrer"></div>
+                            </div>
+                            <label class="readMoreLabel" for="readMoreButtonYggdrasil">
+                                <span>Voir plus</span>
+                            </label>
+                            <label class="readLessLabel" for="readlessButtonYggdrasil">
+                                <span>Voir moins</span>
+                            </label>
+                        </span>
                     </div>
-                    <label class="readMoreLabel" for="readMoreButtonYggdrasil">
-                        <span>Voir plus</span>
-                    </label>
-                    <label class="readLessLabel" for="readlessButtonYggdrasil">
-                        <span>Voir moins</span>
-                    </label>
-                </span>
-            </div>
-            <div class="triangle">
-                <input type=radio class="readMoreButton" id="readMoreButtonTriangle" name="triangle" />
-                <input type=radio class="readLessButton" id="readLessButtonTriangle" name="triangle" />
-                <span class="toggleText triangle">
-                    <div>
-                        <p>Il y a des milliers d'années, Annecy était une ville prospère grâce à des entités
-                            protectrices
-                            qui veillent sur la vallée. Malheureusement, un jour, ils ont dû quitter la ville.
-                            Attristés par leur départ, les protecteurs ont pleuré si fort que de leur larme est né le
-                            lac d'Annecy. Et si les protecteurs n'avaient jamais arrêté de pleurer ?
-                            Nous sommes propulsés dans un univers néo-futuriste, où chaque habitant à été contraint de
-                            construire des extensions sur le toit de leur maison afin de continuer à vivre à Annecy.
-                            Aujourd'hui, l'heure est grave, il faut faire vite. L'eau monte de plus en plus,
-                            menaçant de faire disparaître toute une civilisation. Vous devez aider le dernier habitant
-                            à s'échapper, afin de lui permettre un décollage optimal et une nouvelle vie.
-                        </p>
-                        <div class="blurrer"></div>
+                    <div class="triangle">
+                        <input type=radio class="readMoreButton" id="readMoreButtonTriangle" name="triangle" />
+                        <input type=radio class="readLessButton" id="readLessButtonTriangle" name="triangle" />
+                        <span class="toggleText triangle">
+                            <div>
+                                <p>Il y a des milliers d'années, Annecy était une ville prospère grâce à des entités
+                                    protectrices
+                                    qui veillent sur la vallée. Malheureusement, un jour, ils ont dû quitter la ville.
+                                    Attristés par leur départ, les protecteurs ont pleuré si fort que de leur larme est né le
+                                    lac d'Annecy. Et si les protecteurs n'avaient jamais arrêté de pleurer ?
+                                    Nous sommes propulsés dans un univers néo-futuriste, où chaque habitant à été contraint de
+                                    construire des extensions sur le toit de leur maison afin de continuer à vivre à Annecy.
+                                    Aujourd'hui, l'heure est grave, il faut faire vite. L'eau monte de plus en plus,
+                                    menaçant de faire disparaître toute une civilisation. Vous devez aider le dernier habitant
+                                    à s'échapper, afin de lui permettre un décollage optimal et une nouvelle vie.
+                                </p>
+                                <div class="blurrer"></div>
+                            </div>
+                            <label class="readMoreLabel" for="readMoreButtonTriangle">
+                                <span>Voir plus</span>
+                            </label>
+                            <label class="readLessLabel" for="readLessButtonTriangle">
+                                <span>Voir moins</span>
+                            </label>
+                        </span>
                     </div>
-                    <label class="readMoreLabel" for="readMoreButtonTriangle">
-                        <span>Voir plus</span>
-                    </label>
-                    <label class="readLessLabel" for="readLessButtonTriangle">
-                        <span>Voir moins</span>
-                    </label>
-                </span>
-            </div>
-        </article>
-    </section>
-    <footer>
-        <div class="annecyPaysages">
-            <div class="networks">
-                <a target="_blank" href="https://fr-fr.facebook.com/AnnecyPaysages/">
-                    <img src="./src/facebook.svg" alt="Facebook d'Annecy Paysages">
+                </article>
+            </section>
+            <footer>
+                <div class="annecyPaysages">
+                    <div class="networks">
+                        <a target="_blank" href="https://fr-fr.facebook.com/AnnecyPaysages/">
+                            <img src="./src/facebook.svg" alt="Facebook d'Annecy Paysages">
+                        </a>
+                        <a target="_blank" href="https://www.instagram.com/annecypaysages/">
+                            <img src="./src/instagram.svg" alt="Instagram d'Annecy Paysages">
+                        </a>
+                        <a target="_blank" href="https://vimeo.com/bonlieusnannecy">
+                            <img src="./src/vimeo.svg" alt="Vimeo d'Annecy Paysages">
+                        </a>
+                    </div>
+                    <a target="_blank" href="https://www.annecy-paysages.com/">
+                        <img src="./src/annecyPaysages.png" alt="Logo Annecy Paysages">
+                    </a>
+                </div>
+                <a target="_blank" href="https://gobelins.fr/">
+                    <img src="./src/gobgob.png" alt="Logo Gobelins et École CCI Haute-Savoie">
                 </a>
-                <a target="_blank" href="https://www.instagram.com/annecypaysages/">
-                    <img src="./src/instagram.svg" alt="Instagram d'Annecy Paysages">
+                <a target="_blank" href="https://async-agency.com/">
+                    <img src="./src/async.png" alt="Logo Async">
                 </a>
-                <a target="_blank" href="https://vimeo.com/bonlieusnannecy">
-                    <img src="./src/vimeo.svg" alt="Vimeo d'Annecy Paysages">
+                <a href="#">
+                    <img src="./src/logo.png" alt="Logo France">
                 </a>
-            </div>
-            <a target="_blank" href="https://www.annecy-paysages.com/">
-                <img src="./src/annecyPaysages.png" alt="Logo Annecy Paysages">
+                <iframe frameborder="0" scrolling="no"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=6.130907535552979%2C45.89723640038945%2C6.158502101898194%2C45.90725581564613&amp;layer=mapnik&amp;marker=45.902246334040576%2C6.144704818725586"></iframe>
+                <p class="copyright">©2022 - Naufragés • Async</p>
+                <a class="mapButton" target="_blank"
+                href="https://www.openstreetmap.org/?mlat=45.9022&amp;mlon=6.1447#map=16/45.9022/6.1447" class="mapButton">
+                <img src="./src/externalLink.svg" alt="Open map">
             </a>
-        </div>
-        <a target="_blank" href="https://gobelins.fr/">
-            <img src="./src/gobgob.png" alt="Logo Gobelins et École CCI Haute-Savoie">
-        </a>
-        <a target="_blank" href="https://async-agency.com/">
-            <img src="./src/async.png" alt="Logo Async">
-        </a>
-        <a href="#">
-            <img src="./src/logo.png" alt="Logo France">
-        </a>
-        <iframe frameborder="0" scrolling="no"
-            src="https://www.openstreetmap.org/export/embed.html?bbox=6.130907535552979%2C45.89723640038945%2C6.158502101898194%2C45.90725581564613&amp;layer=mapnik&amp;marker=45.902246334040576%2C6.144704818725586"></iframe>
-        <p class="copyright">©2022 - Naufragés • Async</p>
-        <a class="mapButton" target="_blank"
-            href="https://www.openstreetmap.org/?mlat=45.9022&amp;mlon=6.1447#map=16/45.9022/6.1447" class="mapButton">
-            <img src="./src/externalLink.svg" alt="Open map">
-        </a>
-    </footer>
-</body>
-
-</html>
+        </footer>
+    </body>
+    
+    </html>
+    
