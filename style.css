@@ -252,6 +252,9 @@ nav a:hover {
     height: fit-content;
 }
 
+.disabled:hover{
+    cursor: not-allowed;
+}
 .contributors {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
