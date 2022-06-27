@@ -283,6 +283,7 @@ nav a:hover {
     gap: 5%;
     justify-content: center;
     padding-left: 18vw;
+    box-sizing: content-box;
 }
 
 #bonlieu .separator {
